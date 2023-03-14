@@ -93,6 +93,10 @@ To sum it up, when it comes to making programs run faster, don’t speculate!
 
 Big-O will help you explain how your solution scales with size, but profiling your code on your intended platform is the way to go when trying to reason about runtime performance.
 
+# 
+
+The question ```hashmap/hashtable is always more efficient (faster) than linear search?``` has the same answer as this one.
+
 # Is total number of distinct unsigned 32 bit integers different from signed 32 bit integers?
 
 While the total number of distinct unsigned 32-bit integers is the same as the total number of positive signed 32-bit integers, the distribution of values across the range is different.
@@ -100,3 +104,25 @@ While the total number of distinct unsigned 32-bit integers is the same as the t
 A signed integer is a 32-bit datum that encodes an integer in the range [-2147483648 to 2147483647]. An unsigned integer is a 32-bit datum that encodes a nonnegative integer in the range [0 to 4294967295].
 
 The signed integer is represented in twos complement notation.
+
+# Is searching through a sorted binary tree (binary search tree) always have a better complexity than binary search?
+
+# Are immutable data structures always thread-safe？
+
+# Is quick-sort always the most efficient/fastest sorting algorithm？
+
+# Is it better to run one thread on one task or multithread on one task?
+
+# Describe the data structures and algorithms needed for a program that keeps track of checked out books for a library.
+1. Check out books for a member who has library card
+2. Return books
+3. Find all books that are overdue and who has them checked out
+4. Final all books that will due tomorrow
+Note： Newrelease and popular books have shorter check out periods then normal books.
+
+# Complexity and underlying implementation details of all STL containers and container adaptors?
+
+# Do similar keys have similar hashcodes?
+
+# Explain difference between stack and queue in layman's terms.
+
