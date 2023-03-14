@@ -120,7 +120,7 @@ The signed integer is represented in twos complement notation.
 4. Final all books that will due tomorrow
 Note： Newrelease and popular books have shorter check out periods then normal books.
 
-# Complexity and underlying implementation details of all STL containers and container adaptors?
+# Time complexity and underlying implementation details of all STL containers and container adaptors?
 
 # Do similar keys have similar hashcodes?
 
