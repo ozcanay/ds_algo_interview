@@ -92,3 +92,11 @@ Hash tables implemented with separate chaining and linked lists could potentiall
 To sum it up, when it comes to making programs run faster, don’t speculate!
 
 Big-O will help you explain how your solution scales with size, but profiling your code on your intended platform is the way to go when trying to reason about runtime performance.
+
+# Is total number of distinct unsigned 32 bit integers different from signed 32 bit integers?
+
+While the total number of distinct unsigned 32-bit integers is the same as the total number of positive signed 32-bit integers, the distribution of values across the range is different.
+
+A signed integer is a 32-bit datum that encodes an integer in the range [-2147483648 to 2147483647]. An unsigned integer is a 32-bit datum that encodes a nonnegative integer in the range [0 to 4294967295].
+
+The signed integer is represented in twos complement notation.
