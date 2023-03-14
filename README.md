@@ -55,7 +55,7 @@ Which runs slower?: It depends on ```n```.
 
 Big O is a measure of scaling. If you have a fixed number of items, every algorithm is ```O(1)```.
 
-###
+#
 
 Another example:
 
