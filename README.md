@@ -32,7 +32,7 @@ int linear(int[] arr) {
 
 In this case, constant does a lot of work, but it's fixed work that will always be the same regardless of how large ```arr``` is. linear, on the other hand, appears to have few operations, but those operations are dependent on the size of ```arr```.
 
-In other words, as arr increases in length, constant's performance stays the same, but linear's running time increases linearly in proportion to its argument array's size.
+In other words, as ```arr``` increases in length, constant's performance stays the same, but linear's running time increases linearly in proportion to its argument array's size.
 
 Call the two functions with a single-item array like
 
@@ -47,13 +47,13 @@ But call them like:
 
 ```
 int[] arr = new int[10000000];
-```
-
 constant(arr);
 linear(arr);
+```
+
 Which runs slower?: It depends on ```n```.
 
-Big O is a measure of scaling. If you have a fixed number of items, every algorithm is O(1).
+Big O is a measure of scaling. If you have a fixed number of items, every algorithm is ```O(1)```.
 
 ###
 
