@@ -4,7 +4,7 @@
 
 So, ```O(n)``` linear time can absolutely be faster than ```O(1)``` constant time. The reasons are:
 
-1. Constant-time operations are totally ignored in Big ```O```, which is a measure of how fast an algorithm's complexity increases as input size ```n``` increases, and nothing else. 
+- Constant-time operations are totally ignored in Big ```O```, which is a measure of how fast an algorithm's complexity increases as input size ```n``` increases, and nothing else. 
 
 Here's an example:
 
@@ -81,9 +81,7 @@ However, the constant work performed in the linear solution is 20 times more exp
 
 If our solution will operate on inputs where ```n``` < 20, the exponential solution will perform fewer operations and will run faster than the linear one. In this case, the constant factor is the primary contributor to our runtime.
 
-
-
-2. Cache matters! The way your data is stored in memory and the implementation of the data structures you use in your preferred language will have a big impact on runtime. When considering CPU cycles, RAM access time is about 50 times slower than accessing the L1 cache, making cache misses very expensive. This behavior can result (although language specific) in a linear search in an array being much faster than a hash lookup, providing the array fits entirely in a cache line. How?
+- Cache matters! The way your data is stored in memory and the implementation of the data structures you use in your preferred language will have a big impact on runtime. When considering CPU cycles, RAM access time is about 50 times slower than accessing the L1 cache, making cache misses very expensive. This behavior can result (although language specific) in a linear search in an array being much faster than a hash lookup, providing the array fits entirely in a cache line. How?
 
 Hash tables implemented with separate chaining and linked lists could potentially suffer from poor memory locality (keys and values are not “clustered” together). Moreover, traversing the linked list of values in a specific bucket makes it hard to for the CPU to know the next node in advance, leaving little room for optimizations such as cache prefetching.
 
